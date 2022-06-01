@@ -1,7 +1,7 @@
 import { CONTEXT, generateRandomBoardPosition } from "../board/index.js"
 import { collision as snakeCollision, expandSnake } from "../snake/index.js";
 
-const expansionRate = 2
+const expansionRate = 4
 
 let foodPosition = generateRandomPosition() 
 

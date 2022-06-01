@@ -1,3 +1,5 @@
+import { SPEED } from './index.js'
+
 const inputDirection = {
     x: 0,
     y: 0
@@ -37,7 +39,7 @@ function changeDirection(input) {
     window.removeEventListener('keydown', changeDirection);
     setTimeout(function () {
         window.addEventListener('keydown', changeDirection);
-    }, 1000/7);
+    }, 1000/SPEED);
 
     if (moveFunction) {
         moveFunction()

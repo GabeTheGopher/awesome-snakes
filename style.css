@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #CADC9F;
+    height: 100vh;
+}
+
+#screen {
+    border: 4px solid #0F380F;
+    background-color: #CADC9F;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 28px auto 0 auto;
+}
+
+.box {
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.bouncing-text {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.l1,
+.l2,
+.l3,
+.l4,
+.l5,
+.l6,
+.l7 {
+    position: relative;
+    color: #8BAC0F;
+    text-shadow: 0 3px #0F380F, 0 5px #0F380F, 0 7px #0F380F;
+}
+
+.l1 {
+    animation: bounce 1s ease infinite;
+    -webkit-animation: bounce 1s ease infinite;
+}
+
+.l2 {
+    animation: bounce 1s ease infinite .1s;
+    -webkit-animation: bounce 1s ease infinite .1s;
+}
+
+.l3 {
+    animation: bounce 1s ease infinite .2s;
+    -webkit-animation: bounce 1s ease infinite .2s;
+}
+
+.l4 {
+    animation: bounce 1s ease infinite .3s;
+    -webkit-animation: bounce 1s ease infinite .3s;
+}
+
+.l5 {
+    animation: bounce 1s ease infinite .4s;
+    -webkit-animation: bounce 1s ease infinite .4s;
+}
+
+.l6 {
+    animation: bounce 1s ease infinite .5s;
+    -webkit-animation: bounce 1s ease infinite .5s;
+}
+
+.l7 {
+    animation: bounce 1s ease infinite .6s;
+    -webkit-animation: bounce 1s ease infinite .6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-23px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    58% {
+        transform: scale(1, 1) translateY(-2px);
+    }
+
+    65% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-23px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    58% {
+        transform: scale(1, 1) translateY(-2px);
+    }
+
+    65% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+
+
+
+
+.bouncing-text:before {
+    left: 0;
+    animation: scale 1s linear infinite;
+    -webkit-animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.4);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes scale {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.4);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bouncing-text:after {
+    left: 57px;
+    animation: scale 1s linear infinite .1s;
+    -webkit-animation: scale 1s linear infinite .1s;
+}
+
+#start {
+    color: #0F380F;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #8BAC0F;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    border: none;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px 0 0 #0F380F;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+#start:active {
+    box-shadow: inset 0 -1px 0 0 #0F380F; 
+    transform: translate(0px,1px);
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background-color: #8BAC0F;
+    color: #0F380F;
+    font-family: "Arial Black";
+    font-size: 14px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+footer a{
+    color: #0F380F;
+    font-weight: bolder;
+}

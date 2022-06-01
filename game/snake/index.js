@@ -1,7 +1,7 @@
 import { CONTEXT } from '../board/index.js'
 import { getInputDirection } from './input.js';
 
-export const SPEED = 7
+export const SPEED = 5
 
 let newSegments = 0
 

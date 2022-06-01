@@ -1,0 +1,23 @@
+{
+  "name": "awesome-snakes",
+  "version": "1.0.0",
+  "description": "The classical snake game",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielLopesAgiova/awesome-snakes.git"
+  },
+  "author": "Gabriel Lopes Agiova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielLopesAgiova/awesome-snakes/issues"
+  },
+  "homepage": "https://github.com/GabrielLopesAgiova/awesome-snakes#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

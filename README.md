@@ -4,7 +4,7 @@
 
 ## 📰 Description
 
-**Awesome Snakes** is a simple javascript application, aiming to recreate the classic snake game (new features will be added in the future)
+**Awesome Snakes** is a simple javascript application, aiming to recreate the classic snake game (new features will be added in the future).
 
 ## 📁 How to acess
 

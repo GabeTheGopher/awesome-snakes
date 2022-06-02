@@ -22,4 +22,4 @@
 - 2 players
 
 ---
-Developed by Gabriel Lopes Agiova
+Developed by **Gabriel Lopes Agiova**
